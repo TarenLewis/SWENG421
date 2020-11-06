@@ -1,0 +1,11 @@
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/bin/Debug/netcoreapp3.1/Lab10_tbl5256
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/bin/Debug/netcoreapp3.1/Lab10_tbl5256.deps.json
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/bin/Debug/netcoreapp3.1/Lab10_tbl5256.runtimeconfig.json
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/bin/Debug/netcoreapp3.1/Lab10_tbl5256.runtimeconfig.dev.json
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/bin/Debug/netcoreapp3.1/Lab10_tbl5256.dll
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/bin/Debug/netcoreapp3.1/Lab10_tbl5256.pdb
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/obj/Debug/netcoreapp3.1/Lab10_tbl5256.csprojAssemblyReference.cache
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/obj/Debug/netcoreapp3.1/Lab10_tbl5256.AssemblyInfoInputs.cache
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/obj/Debug/netcoreapp3.1/Lab10_tbl5256.AssemblyInfo.cs
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/obj/Debug/netcoreapp3.1/Lab10_tbl5256.dll
+/home/tl/Documents/PennState/Classes/SWENG421/Week_10/Lab10_tbl5256/obj/Debug/netcoreapp3.1/Lab10_tbl5256.pdb
