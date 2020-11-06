@@ -8,14 +8,15 @@ namespace Lab10_tbl5256
         // to perform fixIt() and also informs his manager. 
         // The supervisor or leader will announce the danger 
         // to his/her direct subordinates and also report it to his/her manager.
-       public Supervisor(string supervisorName, EmployeeIF supervisorBoss){
-           this.name = supervisorName;
-           this.boss = supervisorBoss;
-           clockedInEmployee.Add(this);
-       }
-       public void announceDanger()
+        public Supervisor(string supervisorName, EmployeeIF supervisorBoss)
         {
-            foreach (AbstractEmployee employee in this.subordinateList){
+            this.name = supervisorName;
+            this.boss = supervisorBoss;
+        }
+        public void announceDanger()
+        {
+            foreach (AbstractEmployee employee in this.subordinateList)
+            {
                 employee.receiveMessage("Get outta here!");
             }
         }
@@ -30,18 +31,23 @@ namespace Lab10_tbl5256
 
         // The supervisor or leader will announce the danger 
         // to his/her direct subordinates and also report it to his/her manager.
-        
+
         // Supervisor Jeff always sends Rob and Rick to support the other team 
         // that encounters an incidence, i.e., these two guys perform fixIt() 
         // for the other team. 
-        public override void seeDanger(AbstractEmployee source, EmployeeIF bossMan){
+        public override void seeDanger(AbstractEmployee source, EmployeeIF bossMan)
+        {
             Console.WriteLine("Superviser " + this.name + " becomes aware of danger, telling all subordinates to fix it. ");
-            foreach(RegularEmployee subordinate in subordinateList){
+            foreach (RegularEmployee subordinate in subordinateList)
+            {
                 subordinate.fixIt();
             }
+            notify();
             Console.WriteLine("\nSuperviser " + this.name + " informing boss " + this.boss.getName() + " of the danger.");
             boss.seeDanger(this, boss);
         }
+
+        
 
     }
 }

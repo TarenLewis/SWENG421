@@ -7,7 +7,6 @@ namespace Lab10_tbl5256
         public ProjectLeader(string projectLeaderName, EmployeeIF projectLeaderBoss){
             this.name = projectLeaderName;
             this.boss = projectLeaderBoss;
-            clockedInEmployee.Add(this);
         }
         public void announceDanger()
         {

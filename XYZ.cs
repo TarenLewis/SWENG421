@@ -15,7 +15,8 @@ namespace Lab10_tbl5256
 
 
             CEO Steve = new CEO("Steve", null);
-            Manager Bob = new Manager("Bob", Steve, d1);
+            Manager Bob = new Manager("Bob", Steve);
+            Bob.decision = d1;
             Manager Rachel = new Manager("Rachel", Steve);
             Rachel.decision = d2;
 
@@ -78,6 +79,14 @@ namespace Lab10_tbl5256
 
 
             John.seeDanger(John, Jack);
+
+            Console.WriteLine("");
+            Console.WriteLine("\n////////////////////////////////////////////////////////////////////////////////////////////");
+            Console.WriteLine("DISPLAYING JEFF ALWAYS SENDING ROB AND RICK TO FIX THE PROBLEM:");
+            Console.WriteLine("////////////////////////////////////////////////////////////////////////////////////////////");
+            Jeff.addObserver(Rob);
+            Jeff.addObserver(Rick);
+            Jeff.seeDanger(Jeff, Bob);
         }
     }
 }

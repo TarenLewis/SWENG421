@@ -9,15 +9,9 @@ namespace Lab10_tbl5256
         // supervisors or project leaders and then contact the CEO.
 
 
-        public Decision decision;
+        internal Decision decision;
         List<CommunicatorIF> communicatorList = new List<CommunicatorIF>();
-        public Manager(string managerName, EmployeeIF managerBoss, Decision d)
-        {
-            this.name = managerName;
-            this.boss = managerBoss;
-            this.decision = d;
-            clockedInEmployee.Add(this);
-        }
+      
         public Manager(string managerName, EmployeeIF managerBoss)
         {
             this.name = managerName;

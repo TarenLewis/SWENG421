@@ -2,14 +2,13 @@ using System;
 
 namespace Lab10_tbl5256
 {
-    public class RegularEmployee : Non_ManagementEmployee
+    public class RegularEmployee : Non_ManagementEmployee, ObserverIF
     {
 
         public RegularEmployee(string regularName, EmployeeIF regularBoss)
         {
             this.name = regularName;
             this.boss = regularBoss;
-            clockedInEmployee.Add(this);
         }
         // When a regular employee identifies a danger, 
         // the issue is reported to his/her supervisor or project leader.
@@ -28,6 +27,11 @@ namespace Lab10_tbl5256
         public void fixIt()
         {
             Console.WriteLine("The employee " + this.name + " is fixing the issue.");
+        }
+
+        public void notify()
+        {
+            this.fixIt();
         }
     }
 }

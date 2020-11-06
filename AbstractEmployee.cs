@@ -5,10 +5,9 @@ namespace Lab10_tbl5256
 {
     public abstract class AbstractEmployee : EmployeeIF
     {
-        public static List<EmployeeIF> clockedInEmployee = new List<EmployeeIF>();
         internal string name;
-        public List<EmployeeIF> subordinateList = new List<EmployeeIF>();
-        public EmployeeIF boss;
+        internal List<EmployeeIF> subordinateList = new List<EmployeeIF>();
+        internal EmployeeIF boss;
 
 
         public abstract void seeDanger(AbstractEmployee source, EmployeeIF boss);

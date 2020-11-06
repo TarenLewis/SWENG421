@@ -5,18 +5,19 @@ namespace Lab10_tbl5256
 {
     public class CEO : AbstractEmployee
     {
-        public CEO(string ceoName, EmployeeIF ceoBoss)
-        {
-            this.name = ceoName;
-            this.boss = ceoBoss;
-            clockedInEmployee.Add(this);
-        }
+        
         Random r = new Random();
         Decision finalDecision;
         int decisionChoice;
         int max;
-
         List<Decision> decisionList = new List<Decision>();
+
+        public CEO(string ceoName, EmployeeIF ceoBoss)
+        {
+            this.name = ceoName;
+            this.boss = ceoBoss;
+        }
+
         // The CEO will throw a meeting demanding all managers to come up with a set 
         // of decisions. The CEO will randomly pick one of the decisions.
         // The CEO will randomly pick one of the decisions.
@@ -59,10 +60,5 @@ namespace Lab10_tbl5256
             finalDecision.doIt(this);
             
         }
-
-        // public void evacuate()
-        // {
-            
-        // }
     }
 }
